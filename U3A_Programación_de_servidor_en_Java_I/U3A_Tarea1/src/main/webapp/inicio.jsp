@@ -3,6 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%@taglib prefix="fmt"  uri="http://java.sun.com/jstl/fmt_rt"   %>
+<%@taglib prefix="c"     uri="http://java.sun.com/jsp/jstl/core"     %>
+<fmt:setBundle basename="interface" />
+
 <meta charset="UTF-8">
 <title>INICIO</title>
 </head>
@@ -46,7 +50,7 @@
 					<label class="form-label" for="nombre">Email:</label></br>
 					<input class="form-control" type="email" name="email" required/>
 				</p>
-					<input name="registrarse" type="submit" class="btn btn-primary w-100" value="REGISTRARSE" />
+					<input name="registrarse" type="submit" class="btn btn-primary w-100" value="<fmt:message key="REGISTRARSE"/>" />
 				</form>
 			</div>
 			<% } %>
